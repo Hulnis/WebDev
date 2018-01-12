@@ -1,0 +1,31 @@
+Please fill in answers to the questions below:
+
+
+1. What's your name?
+Eric Parker
+
+2. Which section of the class are you in (Monday or Tuesday; Grad or Undergrad)?
+Tuesday, Undergrad
+
+3. Which VPS & domain providers did you choose?
+Joker and Vultr
+
+4. What domain name did you register?
+webdevnumber1.com
+
+5. What's the URL of your Github repository for this assignment?
+https://github.com/Hulnis/WebDev
+
+6. Which parts of this assignment did you have trouble with, if any?
+Spent the most time figuring out how nginx worked, then went to Friday class and had all my questions answered.
+
+
+And here's a list of tasks for grading comments. Just leave this here:
+ - Task 1
+ - Task 2
+ - Task 3
+ - Task 4
+ - Task 5
+ - Task 6
+ - Task 7
+ - Task 8
