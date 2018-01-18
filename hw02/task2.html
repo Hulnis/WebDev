@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HW02 Task2</title>
+  </head>
+  <body>
+    <h1 id="number">10</h1>
+    <button id="button1">Alert</button>     <br/>
+    <button id="button2">Increment</button> <br/>
+    <button id="button3">Paragraph</button> <br/>
+    <script>
+      function showAlert(ev) {
+        var numberElement = document.getElementById("number");
+        var curNumber = Number(numberElement.innerText);
+        alert(curNumber);
+      }
+      function increment(ev) {
+        var numberElement = document.getElementById("number");
+        var curNumber = Number(numberElement.innerText);
+        numberElement.innerText= curNumber + 1;
+      }
+      function addParagraph(ev) {
+        var numberElement = document.getElementById("number");
+        var curNumber = Number(numberElement.innerText);
+
+        var newPar = document.createElement("p");
+        var node = document.createTextNode(curNumber);
+
+        newPar.appendChild(node);
+        document.body.appendChild(newPar);
+      }
+      var button1 = document.getElementById("button1");
+      var button2 = document.getElementById("button2");
+      var button3 = document.getElementById("button3");
+      button1.onclick = showAlert;
+      button2.onclick = increment;
+      button3.onclick = addParagraph;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HW02 Task3</title>
+    <style>
+    h1 { text-align: center; }
+    .floatLeft {
+      float: left;
+      width: 33%;
+    }
+    .floatRight {
+      float: right;
+      width: 67%;
+    }
+    .startInvisible {
+      display: none;
+    }
+    a {
+      cursor: pointer;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>HW03 Task Three</h1>
+    <div class="floatLeft">
+      <ul>
+        <li><a id="loremIpsemLink">LoremIpsem</a></li>
+        <li><a id="bottlesLink">99 Bottles</a></li>
+        <li><a id="lastThingsLink">Last Thing</a></li>
+      </ul>
+    </div>
+    <div class="floatRight">
+      <p id="loremIpsemContent">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae maximus tellus. Duis id turpis quam. Sed interdum ac lectus in luctus. Proin sit amet sapien a purus ultrices fringilla eget nec metus. In feugiat arcu arcu, eu mollis diam sagittis vitae. Aenean molestie diam ut mauris porttitor, vel vehicula lorem iaculis. Praesent id convallis ligula. Integer id semper ligula, sit amet interdum enim. Aliquam porttitor porta lectus, eget placerat lectus eleifend nec. Nam facilisis dui vitae diam iaculis mattis. Vivamus ullamcorper nibh id pulvinar bibendum. Suspendisse efficitur auctor elit, sed finibus ante molestie vel. Donec quis tempor ante. Integer eget feugiat odio.
+        Proin ac dolor et diam cursus ultricies sed eu libero. Morbi et nulla nunc. Suspendisse accumsan urna nulla, ut tincidunt odio vulputate a. Ut rutrum volutpat dolor, sed scelerisque elit bibendum vitae. Ut viverra ut sapien at convallis. Fusce malesuada scelerisque condimentum. Vestibulum ultrices, velit non maximus vulputate, enim lacus lacinia tellus, id imperdiet neque sapien vel ex.
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque hendrerit egestas libero, at venenatis magna. Fusce hendrerit mauris sed metus consectetur pharetra. Mauris sed efficitur velit, ac pellentesque neque. Quisque consectetur diam sit amet libero condimentum consectetur. Etiam molestie turpis quis odio facilisis, vitae elementum nibh efficitur. Morbi porttitor mi felis, non gravida nibh ornare et.
+        Etiam sed eros urna. Mauris scelerisque tellus sed dui sagittis, vel iaculis orci viverra. Aliquam ornare lacinia erat, tincidunt ultricies diam. Suspendisse potenti. Aliquam ac eros euismod, molestie purus vitae, hendrerit justo. Morbi aliquam tristique maximus. Morbi mi ipsum, facilisis a ex nec, bibendum mattis magna. Vivamus ornare enim non purus dignissim, vel lobortis ligula bibendum. Morbi eu diam vel lorem commodo tincidunt.
+      </p>
+      <p id="bottlesContent" class="startInvisible">
+        99 bottles of beer on the wall, 99 bottles of beer.
+        Take one down, pass it around, 98 bottles of beer on the wall...
+        98 bottles of beer on the wall, 98 bottles of beer.
+        Take one down, pass it around, 97 bottles of beer on the wall...
+        97 bottles of beer on the wall, 97 bottles of beer.
+        Take one down, pass it around, 96 bottles of beer on the wall...
+        96 bottles of beer on the wall, 96 bottles of beer.
+        Take one down, pass it around, 95 bottles of beer on the wall...
+      </p>
+      <p id="lastThingsContent" class="startInvisible">
+        this is the third thing
+      </p>
+    </div>
+    <script>
+      function showLoremIpsum(ev) {
+        document.getElementById("loremIpsemContent").style.display = "block";
+        document.getElementById("bottlesContent").style.display = "none";
+        document.getElementById("lastThingsContent").style.display = "none";
+      }
+      function showBottles(ev) {
+        document.getElementById("loremIpsemContent").style.display = "none";
+        document.getElementById("bottlesContent").style.display = "block";
+        document.getElementById("lastThingsContent").style.display = "none";
+      }
+      function showLastThing(ev) {
+        document.getElementById("loremIpsemContent").style.display = "none";
+        document.getElementById("bottlesContent").style.display = "none";
+        document.getElementById("lastThingsContent").style.display = "block";
+      }
+      var button1 = document.getElementById("loremIpsemLink");
+      var button2 = document.getElementById("bottlesLink");
+      var button3 = document.getElementById("lastThingsLink");
+      button1.onclick = showLoremIpsum;
+      button2.onclick = showBottles;
+      button3.onclick = showLastThing;
+    </script>
+  </body>
+</html>
