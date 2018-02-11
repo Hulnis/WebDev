@@ -6,11 +6,11 @@
 use Mix.Config
 
 # Configures the endpoint
-config :hangman, HangmanWeb.Endpoint,
+config :memory_game, MemoryGameWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "UqrplCznn1U5HADLwcEx0FyrNfWpw4vmz7YTwDnMmaHwjykwrzsY4f+SW48CHoGy",
-  render_errors: [view: HangmanWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Hangman.PubSub,
+  secret_key_base: "j8IwAk7KYm0ziqjKbGIo8HStqaqLnHJhIO2Dygb0enSQWIg3gHRfBLYsYQRrgs4q",
+  render_errors: [view: MemoryGameWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: MemoryGame.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
